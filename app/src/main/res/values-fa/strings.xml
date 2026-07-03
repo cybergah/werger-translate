@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <string name="nav_translate">ترجمه</string>
+    <string name="nav_document">سند</string>
+    <string name="nav_photo">عکس</string>
+    <string name="nav_settings">تنظیمات</string>
+    <string name="nav_about">درباره</string>
+
+    <string name="input_hint">متن را وارد کنید</string>
+    <string name="translate_btn">ترجمه</string>
+    <string name="translating">در حال ترجمه…</string>
+    <string name="clear">پاک کردن</string>
+    <string name="swap">جابه‌جایی زبان‌ها</string>
+    <string name="output_placeholder">ترجمه اینجا نمایش داده می‌شود.</string>
+    <string name="listen">پخش صدا</string>
+    <string name="copy">کپی</string>
+    <string name="engine_online">آنلاین</string>
+    <string name="engine_offline">آفلاین</string>
+
+    <string name="doc_pick">انتخاب سند (‎.txt، .pdf)</string>
+    <string name="doc_busy">در حال ترجمه سند…</string>
+    <string name="doc_result">نتیجه</string>
+    <string name="doc_share">اشتراک‌گذاری</string>
+    <string name="doc_hint">یک فایل ‎.txt یا ‎.pdf انتخاب کنید؛ فایل ترجمه‌شده با همان قالب می‌گیرید (۲ مگابایت).</string>
+    <string name="doc_ready">سند ترجمه شد</string>
+
+    <string name="photo_gallery">از گالری</string>
+    <string name="photo_camera">دوربین</string>
+    <string name="photo_run">ترجمه روی عکس</string>
+    <string name="photo_busy">در حال پردازش…</string>
+    <string name="photo_recognized">متن شناسایی‌شده</string>
+    <string name="photo_hint">عکسی انتخاب یا ثبت کنید؛ ترجمه روی آن قرار می‌گیرد.</string>
+    <string name="photo_save">ذخیره</string>
+    <string name="photo_share">اشتراک‌گذاری</string>
+    <string name="cancel_btn">لغو</string>
+    <string name="photo_show_original">نمایش اصل</string>
+    <string name="photo_show_translated">نمایش ترجمه</string>
+    <string name="fullscreen">تمام‌صفحه</string>
+    <string name="doc_open">باز کردن</string>
+
+    <string name="settings_mode">حالت ترجمه</string>
+    <string name="mode_auto">خودکار</string>
+    <string name="mode_online">آنلاین (LibreTranslate)</string>
+    <string name="mode_offline">آفلاین (NLLB)</string>
+    <string name="settings_model">مدل آفلاین</string>
+    <string name="model_download">دانلود مدل (~%1$d MB)</string>
+    <string name="model_import">انتخاب پوشه مدل</string>
+    <string name="model_ready">مدل آماده است ✓</string>
+    <string name="model_absent">مدل دانلود نشده است</string>
+    <string name="model_downloading">در حال دانلود: %1$d / %2$d MB</string>
+    <string name="model_importing">در حال وارد کردن: %1$d / %2$d MB</string>
+    <string name="model_loading">در حال بارگذاری مدل…</string>
+    <string name="model_path">محل: %1$s</string>
+    <string name="model_note">مدل یک‌بار دانلود می‌شود؛ سپس برنامه آفلاین کار می‌کند.</string>
+    <string name="settings_online">تنظیمات آنلاین</string>
+    <string name="lt_url">آدرس LibreTranslate</string>
+    <string name="lt_key">کلید API (اختیاری)</string>
+    <string name="settings_language">زبان برنامه</string>
+    <string name="retry">تلاش دوباره</string>
+
+    <string name="about_title">درباره Wergêr</string>
+    <string name="about_tagline">ترجمه با هوش مصنوعی — آفلاین و آنلاین</string>
+    <string name="about_body">Wergêr یک برنامه ترجمه رایگان و متن‌باز است. کردی (کرمانجی و سورانی) و بسیاری زبان‌های دیگر را، هم آفلاین و هم آنلاین، ترجمه می‌کند. ما باور داریم هیچ زبانی نباید جا بماند.</string>
+    <string name="about_made_by">ساخته Cybergah Group</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">متن‌باز · رایگان · بدون تبلیغ · بدون ردیابی</string>
+    <string name="about_license">کد: AGPL-3.0 · مدل NLLB-200 (Meta): CC-BY-NC 4.0 (غیرتجاری)</string>
+    <string name="about_thirdparty">با ONNX Runtime، ML Kit، pdf.js و pdf-lib ساخته شده — با سپاس از جامعهٔ متن‌باز.</string>
+    <string name="about_privacy">در حالت آفلاین متن هرگز از دستگاه خارج نمی‌شود. در حالت آنلاین متن برای ترجمه ارسال می‌شود.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">نسخه %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">راهنما</string>
+    <string name="guide_title">راهنمای استفاده</string>
+    <string name="guide_replay">نمایش دوبارهٔ آموزش</string>
+    <string name="onboard_skip">رد کردن</string>
+    <string name="onboard_next">بعدی</string>
+    <string name="onboard_back">قبلی</string>
+    <string name="onboard_start">شروع</string>
+    <string name="guide_welcome_title">به Wergêr خوش آمدید</string>
+    <string name="guide_welcome_body">Wergêr میان کُردی (کرمانجی و سورانی)، ترکی، فارسی، عربی، انگلیسی و حدود ۲۰۰ زبان دیگر ترجمه می‌کند — به‌صورت متن ساده، درون عکس‌ها و درون اسناد. این راهنما هر قابلیت را نشان می‌دهد. هر زمان می‌توانید از دکمهٔ راهنما دوباره آن را باز کنید.</string>
+    <string name="guide_text_title">ترجمهٔ متن</string>
+    <string name="guide_text_body">در صفحهٔ ترجمه، در بالا زبان مبدأ و مقصد را انتخاب کنید. متن را بنویسید یا بچسبانید، سپس دکمهٔ ترجمه را بزنید. برای جابه‌جایی دو زبان از ⇄، برای شنیدن از 🔊 و برای کپی نتیجه از ⧉ استفاده کنید.</string>
+    <string name="guide_photo_title">ترجمهٔ عکس</string>
+    <string name="guide_photo_body">زبانهٔ عکس را باز کنید و تصویری انتخاب کنید. Wergêr متن داخل تصویر را می‌خواند، ترجمه می‌کند و ترجمه را روی تصویر اصلی می‌گذارد — مانند مترجم زندهٔ دوربین. می‌توانید میان اصل و ترجمه جابه‌جا شوید، تمام‌صفحه ببینید، سپس ذخیره یا هم‌رسانی کنید.</string>
+    <string name="guide_doc_title">ترجمهٔ سند</string>
+    <string name="guide_doc_body">زبانهٔ سند را باز کنید و فایل .txt یا .pdf انتخاب کنید (حداکثر ۲ مگابایت). فایل‌های متنی خط‌به‌خط ترجمه می‌شوند. PDFها چیدمان اصلی خود را حفظ می‌کنند — هر صفحه در جای خود ترجمه می‌شود. پس از پایان می‌توانید همهٔ صفحه‌ها را مرور کنید، سپس فایل را روی دستگاه ذخیره یا هم‌رسانی کنید.</string>
+    <string name="guide_modes_title">برخط و برون‌خط</string>
+    <string name="guide_modes_body">حالت خودکار هرگاه اینترنت باشد از آن استفاده می‌کند و به‌طور خودکار به برون‌خط برمی‌گردد. برخط سریع است و نیازی به تنظیم ندارد. برون‌خط پس از دانلود مدل‌های زبانی NLLB در تنظیمات بدون اتصال کار می‌کند — برای حریم خصوصی یا سفر عالی است.</string>
+    <string name="guide_privacy_title">حریم خصوصی</string>
+    <string name="guide_privacy_body">ترجمهٔ برون‌خط هرگز از دستگاه شما خارج نمی‌شود. ترجمهٔ برخط فقط متنی را که ترجمه می‌کنید به سرویس ترجمه می‌فرستد. Wergêr نه تبلیغات دارد، نه ردیابی و نه حساب کاربری. ساختهٔ Cybergah Group.</string>
+</resources>

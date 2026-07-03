@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="kmr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wergêr</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Animated intro: logo + flag + Cybergah, shown for a few seconds. -->
+    <div id="splash">
+      <img src="assets/logo_256.png" alt="Wergêr" class="splash-logo" />
+      <div class="splash-name">Wergêr</div>
+      <div class="splash-sub" data-i18n="tagline">by Cybergah Group</div>
+      <div class="splash-credit">Cybergah Group · cybergah.com</div>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/logo_256.png" alt="Wergêr" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Wergêr</span>
+          <span class="brand-sub" data-i18n="tagline">by Cybergah Group</span>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="status-pill" id="status-pill" title="">
+          <span class="dot" id="status-dot"></span>
+          <span id="status-text" data-i18n="status_checking">…</span>
+        </div>
+
+        <label class="ui-lang">
+          <span data-i18n="ui_language">UI</span>
+          <select id="ui-lang-select">
+            <option value="kmr">Kurmancî</option>
+            <option value="ckb">سۆرانی</option>
+            <option value="fa">فارسی</option>
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+
+        <button class="icon-btn" id="nav-photo" data-i18n-title="photo_translate">📷</button>
+        <button class="icon-btn" id="nav-doc" data-i18n-title="doc_translate">📄</button>
+        <button class="icon-btn" id="nav-settings" data-i18n-title="settings">⚙</button>
+        <button class="icon-btn" id="nav-guide" data-i18n-title="guide">❓</button>
+        <button class="icon-btn" id="nav-about" data-i18n-title="about">ⓘ</button>
+      </div>
+    </header>
+
+    <!-- ============ TRANSLATOR ============ -->
+    <main id="page-translate" class="page active">
+      <section class="lang-bar">
+        <select id="src-lang" class="lang-select"></select>
+        <button class="swap-btn" id="swap-btn" data-i18n-title="swap">⇄</button>
+        <select id="tgt-lang" class="lang-select"></select>
+      </section>
+
+      <section class="panes">
+        <div class="pane">
+          <div class="pane-head">
+            <span class="pane-label" id="src-label"></span>
+            <div class="pane-tools">
+              <button class="tool-btn" id="src-speak" data-i18n-title="speak">🔊</button>
+              <button class="tool-btn" id="src-clear" data-i18n-title="clear">✕</button>
+            </div>
+          </div>
+          <textarea id="src-text" data-i18n-ph="src_placeholder"></textarea>
+          <div class="pane-foot">
+            <span id="src-count" class="count">0</span>
+          </div>
+        </div>
+
+        <div class="pane">
+          <div class="pane-head">
+            <span class="pane-label" id="tgt-label"></span>
+            <div class="pane-tools">
+              <button class="tool-btn" id="tgt-speak" data-i18n-title="speak">🔊</button>
+              <button class="tool-btn" id="tgt-copy" data-i18n-title="copy">⧉</button>
+            </div>
+          </div>
+          <textarea id="tgt-text" readonly data-i18n-ph="tgt_placeholder"></textarea>
+          <div class="pane-foot">
+            <span id="engine-badge" class="badge"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="action-bar">
+        <button class="primary-btn" id="translate-btn" data-i18n="translate">Translate</button>
+        <div id="spinner" class="spinner hidden"></div>
+        <button class="ghost-btn hidden" id="doc-cancel" data-i18n="cancel_btn">Cancel</button>
+        <span id="error-msg" class="error-msg"></span>
+      </section>
+      <p class="shortcut-hint" data-i18n="shortcut_hint"></p>
+    </main>
+
+    <!-- ============ PHOTO (in-place overlay) ============ -->
+    <main id="page-photo" class="page">
+      <div class="photo-toolbar">
+        <button class="ghost-btn" id="photo-pick" data-i18n="photo_pick">Choose image</button>
+        <button class="ghost-btn hidden" id="photo-toggle" data-i18n="photo_show_original">Show original</button>
+        <button class="ghost-btn hidden" id="photo-fullscreen" data-i18n="fullscreen">Fullscreen</button>
+        <button class="primary-btn" id="photo-save" data-i18n="photo_save" disabled>Save</button>
+        <button class="ghost-btn hidden" id="photo-cancel" data-i18n="cancel_btn">Cancel</button>
+        <button class="ghost-btn" id="photo-back" data-i18n="back">Back</button>
+        <div id="photo-spinner" class="spinner hidden"></div>
+        <span id="photo-status" class="badge"></span>
+        <span id="photo-error" class="error-msg"></span>
+      </div>
+      <p class="hint" data-i18n="photo_overlay_hint"></p>
+      <div class="photo-canvas-wrap">
+        <canvas id="photo-canvas"></canvas>
+      </div>
+    </main>
+
+    <!-- ============ DOCUMENT PREVIEW (PDF, before saving) ============ -->
+    <main id="page-docpreview" class="page">
+      <div class="photo-toolbar">
+        <button class="primary-btn" id="docpreview-save" data-i18n="photo_save">Save</button>
+        <span id="docpreview-status" class="badge"></span>
+        <button class="ghost-btn" id="docpreview-back" data-i18n="back">Back</button>
+      </div>
+      <p class="hint" data-i18n="doc_ready"></p>
+      <div class="photo-canvas-wrap" id="docpreview-pages"></div>
+    </main>
+
+    <!-- ============ SETTINGS ============ -->
+    <main id="page-settings" class="page">
+      <h2 data-i18n="settings">Settings</h2>
+
+      <div class="card">
+        <h3 data-i18n="mode">Mode</h3>
+        <p class="hint" data-i18n="mode_hint"></p>
+        <div class="seg" id="mode-seg">
+          <button data-mode="auto" class="seg-btn active" data-i18n="mode_auto">Auto</button>
+          <button data-mode="online" class="seg-btn" data-i18n="mode_online">Online</button>
+          <button data-mode="offline" class="seg-btn" data-i18n="mode_offline">Offline</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 data-i18n="online_backend">Online backend (LibreTranslate)</h3>
+        <p class="hint" data-i18n="online_free_hint"></p>
+        <label class="field">
+          <span data-i18n="endpoint">Endpoint</span>
+          <input type="text" id="endpoint-input" placeholder="https://libretranslate.com/translate" />
+        </label>
+        <label class="field">
+          <span data-i18n="api_key">API key (optional)</span>
+          <input type="password" id="apikey-input" placeholder="" />
+        </label>
+      </div>
+
+      <div class="card">
+        <h3 data-i18n="offline_models">Offline models (NLLB-200)</h3>
+        <p class="hint" id="offline-support-hint"></p>
+        <label class="field">
+          <span data-i18n="models_folder">Models folder</span>
+          <div class="row">
+            <input type="text" id="folder-input" />
+            <button class="ghost-btn" id="pick-folder" data-i18n="browse">Browse…</button>
+          </div>
+        </label>
+        <div class="model-status" id="model-status"></div>
+        <label class="field" style="flex-direction:row;align-items:center;gap:8px">
+          <input type="checkbox" id="hq-toggle" />
+          <span data-i18n="hq_label">High quality (larger)</span>
+        </label>
+        <p class="hint" data-i18n="hq_hint"></p>
+        <div class="row">
+          <button class="primary-btn" id="download-btn" data-i18n="download_models">Download models</button>
+          <button class="ghost-btn" id="redetect-btn" data-i18n="redetect">Re-detect</button>
+        </div>
+        <div class="progress-wrap hidden" id="progress-wrap">
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          <span class="progress-label" id="progress-label"></span>
+        </div>
+      </div>
+
+      <button class="ghost-btn" id="settings-back" data-i18n="back">Back</button>
+    </main>
+
+    <!-- ============ GUIDE (user manual) ============ -->
+    <main id="page-guide" class="page">
+      <div class="guide">
+        <h2 data-i18n="guide_title">User Guide</h2>
+        <div id="guide-content"></div>
+        <div class="guide-actions">
+          <button class="ghost-btn" id="guide-replay" data-i18n="guide_replay">Show the tutorial again</button>
+          <button class="ghost-btn" id="guide-back" data-i18n="back">Back</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ============ ABOUT ============ -->
+    <main id="page-about" class="page">
+      <div class="about">
+        <img src="assets/logo.png" alt="Wergêr" class="about-logo" />
+        <h1>Wergêr</h1>
+        <p class="about-byline">Cybergah Group · <a href="#" id="cybergah-link">cybergah.com</a></p>
+        <p data-i18n="about_body"></p>
+        <p data-i18n="about_oss"></p>
+        <p class="about-note" data-i18n="about_privacy"></p>
+        <p class="about-note" data-i18n="about_license"></p>
+        <p class="about-note" data-i18n="about_thirdparty"></p>
+        <p class="about-credit" data-i18n="about_credit"></p>
+        <p class="about-note" data-i18n="about_copyright"></p>
+        <img src="assets/kurdistan_flag.png" class="kurd-flag-img" alt="Ala Kurdistanê" />
+        <button class="ghost-btn" id="about-back" data-i18n="back">Back</button>
+      </div>
+    </main>
+
+    <!-- Fullscreen image viewer (photo overlay). Click to close. -->
+    <div id="img-modal" class="hidden"><img id="img-modal-img" alt="" /></div>
+
+    <!-- First-run onboarding tutorial (skippable). Filled by main.js. -->
+    <div id="onboard" class="hidden">
+      <div class="onboard-card">
+        <div class="onboard-icon" id="onboard-icon">👋</div>
+        <div class="onboard-dots" id="onboard-dots"></div>
+        <h2 class="onboard-title" id="onboard-title"></h2>
+        <p class="onboard-body" id="onboard-body"></p>
+        <div class="onboard-nav">
+          <button class="ghost-btn" id="onboard-skip" data-i18n="onboard_skip">Skip</button>
+          <div class="onboard-nav-right">
+            <button class="ghost-btn" id="onboard-back" data-i18n="onboard_back">Back</button>
+            <button class="primary-btn" id="onboard-next" data-i18n="onboard_next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDF render (pdf.js) + write (pdf-lib) for in-place document translation. -->
+    <script src="vendor/pdf.min.js"></script>
+    <script src="vendor/pdf-lib.min.js"></script>
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

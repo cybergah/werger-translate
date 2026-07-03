@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <string name="nav_translate">Translate</string>
+    <string name="nav_document">Document</string>
+    <string name="nav_photo">Photo</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
+
+    <string name="input_hint">Enter text</string>
+    <string name="translate_btn">Translate</string>
+    <string name="translating">Translating…</string>
+    <string name="clear">Clear</string>
+    <string name="swap">Swap languages</string>
+    <string name="output_placeholder">The translation will appear here.</string>
+    <string name="listen">Listen</string>
+    <string name="copy">Copy</string>
+    <string name="engine_online">online</string>
+    <string name="engine_offline">offline</string>
+
+    <string name="doc_pick">Choose document (.txt, .pdf)</string>
+    <string name="doc_busy">Translating document…</string>
+    <string name="doc_result">Result</string>
+    <string name="doc_share">Share</string>
+    <string name="doc_hint">Pick a .txt or .pdf; you get a translated file in the same format (2 MB).</string>
+    <string name="doc_ready">Document translated</string>
+
+    <string name="photo_gallery">From gallery</string>
+    <string name="photo_camera">Camera</string>
+    <string name="photo_run">Translate onto photo</string>
+    <string name="photo_busy">Processing…</string>
+    <string name="photo_recognized">Recognized text</string>
+    <string name="photo_hint">Pick or take a photo; the translation is drawn onto it.</string>
+    <string name="photo_save">Save</string>
+    <string name="photo_share">Share</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="photo_show_original">Show original</string>
+    <string name="photo_show_translated">Show translation</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="doc_open">Open</string>
+
+    <string name="settings_mode">Translation mode</string>
+    <string name="mode_auto">Automatic</string>
+    <string name="mode_online">Online (LibreTranslate)</string>
+    <string name="mode_offline">Offline (NLLB)</string>
+    <string name="settings_model">Offline model</string>
+    <string name="model_download">Download model (~%1$d MB)</string>
+    <string name="model_import">Choose model folder</string>
+    <string name="model_ready">Model ready ✓</string>
+    <string name="model_absent">Model not downloaded</string>
+    <string name="model_downloading">Downloading: %1$d / %2$d MB</string>
+    <string name="model_importing">Importing: %1$d / %2$d MB</string>
+    <string name="model_loading">Loading model…</string>
+    <string name="model_path">Location: %1$s</string>
+    <string name="model_note">The model downloads once; afterwards the app works offline.</string>
+    <string name="settings_online">Online settings</string>
+    <string name="lt_url">LibreTranslate URL</string>
+    <string name="lt_key">API key (optional)</string>
+    <string name="settings_language">App language</string>
+    <string name="retry">Retry</string>
+
+    <string name="about_title">About Wergêr</string>
+    <string name="about_tagline">AI translation — offline and online</string>
+    <string name="about_body">Wergêr is a free, open-source translation app. It translates Kurdish (Kurmancî and Soranî) and many other languages, both offline and online. We believe no language should be left behind.</string>
+    <string name="about_made_by">Made by Cybergah Group</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">Open source · Free · No ads · No tracking</string>
+    <string name="about_license">Code: AGPL-3.0 · NLLB-200 model (Meta): CC-BY-NC 4.0 (non-commercial)</string>
+    <string name="about_thirdparty">Built with ONNX Runtime, ML Kit, pdf.js and pdf-lib — thanks to the open-source community.</string>
+    <string name="about_privacy">In offline mode text never leaves your device. In online mode text is sent to translation services.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">Version %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">Guide</string>
+    <string name="guide_title">User Guide</string>
+    <string name="guide_replay">Show the tutorial again</string>
+    <string name="onboard_skip">Skip</string>
+    <string name="onboard_next">Next</string>
+    <string name="onboard_back">Back</string>
+    <string name="onboard_start">Get started</string>
+    <string name="guide_welcome_title">Welcome to Wergêr</string>
+    <string name="guide_welcome_body">Wergêr translates between Kurdish (Kurmancî &amp; Soranî), Turkish, Persian, Arabic, English and about 200 more languages — as plain text, inside photos, and inside documents. This guide walks you through each feature. You can reopen it any time from the Guide button.</string>
+    <string name="guide_text_title">Translate text</string>
+    <string name="guide_text_body">On the Translate screen, choose the source and target languages at the top. Type or paste your text, then press Translate. Use ⇄ to swap the two languages, 🔊 to listen, and ⧉ to copy the result.</string>
+    <string name="guide_photo_title">Translate photos</string>
+    <string name="guide_photo_body">Open the Photo tab and choose an image. Wergêr reads the text in the picture, translates it, and paints the translation back over the original — like a live camera translator. Switch between the original and the translation, view it fullscreen, then Save or Share it.</string>
+    <string name="guide_doc_title">Translate documents</string>
+    <string name="guide_doc_body">Open the Document tab and pick a .txt or .pdf file (up to 2 MB). Text files are translated line by line. PDFs keep their original layout — every page is translated in place. When it finishes you can scroll through all the pages, then Save the file to your device or Share it.</string>
+    <string name="guide_modes_title">Online &amp; offline</string>
+    <string name="guide_modes_body">Auto mode uses the internet when available and falls back to offline automatically. Online is fast and needs no setup. Offline works with no connection once you download the NLLB language models in Settings — ideal for privacy or travel.</string>
+    <string name="guide_privacy_title">Privacy</string>
+    <string name="guide_privacy_body">Offline translation never leaves your device. Online translation sends only the text you are translating to the translation service. Wergêr has no ads, no tracking and no account. Made by Cybergah Group.</string>
+</resources>

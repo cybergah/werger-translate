@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <string name="nav_translate">ترجمة</string>
+    <string name="nav_document">مستند</string>
+    <string name="nav_photo">صورة</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_about">حول</string>
+
+    <string name="input_hint">أدخل النص</string>
+    <string name="translate_btn">ترجم</string>
+    <string name="translating">جارٍ الترجمة…</string>
+    <string name="clear">مسح</string>
+    <string name="swap">تبديل اللغتين</string>
+    <string name="output_placeholder">ستظهر الترجمة هنا.</string>
+    <string name="listen">استماع</string>
+    <string name="copy">نسخ</string>
+    <string name="engine_online">متصل</string>
+    <string name="engine_offline">دون اتصال</string>
+
+    <string name="doc_pick">اختر مستندًا (‎.txt، .pdf)</string>
+    <string name="doc_busy">جارٍ ترجمة المستند…</string>
+    <string name="doc_result">النتيجة</string>
+    <string name="doc_share">مشاركة</string>
+    <string name="doc_hint">اختر ملف ‎.txt أو ‎.pdf؛ ستحصل على ملف مترجم بنفس الصيغة (2 ميغابايت).</string>
+    <string name="doc_ready">تمت ترجمة المستند</string>
+
+    <string name="photo_gallery">من المعرض</string>
+    <string name="photo_camera">الكاميرا</string>
+    <string name="photo_run">ترجم فوق الصورة</string>
+    <string name="photo_busy">جارٍ المعالجة…</string>
+    <string name="photo_recognized">النص المُتعرَّف عليه</string>
+    <string name="photo_hint">اختر صورة أو التقطها؛ تُرسم الترجمة فوقها.</string>
+    <string name="photo_save">حفظ</string>
+    <string name="photo_share">مشاركة</string>
+    <string name="cancel_btn">إلغاء</string>
+    <string name="photo_show_original">إظهار الأصل</string>
+    <string name="photo_show_translated">إظهار الترجمة</string>
+    <string name="fullscreen">ملء الشاشة</string>
+    <string name="doc_open">فتح</string>
+
+    <string name="settings_mode">وضع الترجمة</string>
+    <string name="mode_auto">تلقائي</string>
+    <string name="mode_online">متصل (LibreTranslate)</string>
+    <string name="mode_offline">دون اتصال (NLLB)</string>
+    <string name="settings_model">النموذج دون اتصال</string>
+    <string name="model_download">تنزيل النموذج (~%1$d MB)</string>
+    <string name="model_import">اختر مجلد النموذج</string>
+    <string name="model_ready">النموذج جاهز ✓</string>
+    <string name="model_absent">لم يتم تنزيل النموذج</string>
+    <string name="model_downloading">جارٍ التنزيل: %1$d / %2$d MB</string>
+    <string name="model_importing">جارٍ الاستيراد: %1$d / %2$d MB</string>
+    <string name="model_loading">جارٍ تحميل النموذج…</string>
+    <string name="model_path">المكان: %1$s</string>
+    <string name="model_note">يُنزَّل النموذج مرة واحدة، ثم يعمل التطبيق دون اتصال.</string>
+    <string name="settings_online">إعدادات الاتصال</string>
+    <string name="lt_url">عنوان LibreTranslate</string>
+    <string name="lt_key">مفتاح API (اختياري)</string>
+    <string name="settings_language">لغة التطبيق</string>
+    <string name="retry">أعد المحاولة</string>
+
+    <string name="about_title">حول Wergêr</string>
+    <string name="about_tagline">ترجمة بالذكاء الاصطناعي — دون اتصال ومتصل</string>
+    <string name="about_body">Wergêr تطبيق ترجمة مجاني ومفتوح المصدر. يترجم الكردية (الكرمانجية والسورانية) ولغات أخرى كثيرة، دون اتصال وعبر الإنترنت. نؤمن بأنه لا ينبغي ترك أي لغة خلف الركب.</string>
+    <string name="about_made_by">من إنتاج Cybergah Group</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">مفتوح المصدر · مجاني · بلا إعلانات · بلا تتبع</string>
+    <string name="about_license">الكود: AGPL-3.0 · نموذج NLLB-200 (Meta): CC-BY-NC 4.0 (غير تجاري)</string>
+    <string name="about_thirdparty">بُني باستخدام ONNX Runtime وML Kit وpdf.js وpdf-lib — شكرًا لمجتمع المصادر المفتوحة.</string>
+    <string name="about_privacy">في وضع عدم الاتصال لا يغادر النص جهازك. في الوضع المتصل يُرسل النص إلى خدمات الترجمة.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">الإصدار %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">الدليل</string>
+    <string name="guide_title">دليل الاستخدام</string>
+    <string name="guide_replay">عرض الشرح مرة أخرى</string>
+    <string name="onboard_skip">تخطٍّ</string>
+    <string name="onboard_next">التالي</string>
+    <string name="onboard_back">السابق</string>
+    <string name="onboard_start">ابدأ</string>
+    <string name="guide_welcome_title">مرحبًا بك في Wergêr</string>
+    <string name="guide_welcome_body">يترجم Wergêr بين الكردية (الكرمانجية والسورانية) والتركية والفارسية والعربية والإنجليزية ونحو 200 لغة أخرى — كنصّ عادي، وداخل الصور، وداخل المستندات. يوضّح هذا الدليل كل ميزة. يمكنك إعادة فتحه في أي وقت من زر الدليل.</string>
+    <string name="guide_text_title">ترجمة النص</string>
+    <string name="guide_text_body">في شاشة الترجمة، اختر لغة المصدر ولغة الهدف في الأعلى. اكتب النص أو الصقه، ثم اضغط زر الترجمة. استخدم ⇄ لتبديل اللغتين، و🔊 للاستماع، و⧉ لنسخ النتيجة.</string>
+    <string name="guide_photo_title">ترجمة الصور</string>
+    <string name="guide_photo_body">افتح تبويب الصورة واختر صورة. يقرأ Wergêr النص في الصورة ويترجمه ويضع الترجمة فوق الأصل — مثل مترجم كاميرا حيّ. يمكنك التبديل بين الأصل والترجمة، وعرضها بملء الشاشة، ثم الحفظ أو المشاركة.</string>
+    <string name="guide_doc_title">ترجمة المستندات</string>
+    <string name="guide_doc_body">افتح تبويب المستند واختر ملف .txt أو .pdf (حتى 2 ميغابايت). تُترجم الملفات النصية سطرًا بسطر. تحتفظ ملفات PDF بتخطيطها الأصلي — تُترجم كل صفحة في مكانها. عند الانتهاء يمكنك تصفح جميع الصفحات، ثم حفظ الملف على جهازك أو مشاركته.</string>
+    <string name="guide_modes_title">متصل وغير متصل</string>
+    <string name="guide_modes_body">يستخدم الوضع التلقائي الإنترنت عند توفره ويعود تلقائيًا إلى وضع عدم الاتصال. الوضع المتصل سريع ولا يحتاج إعدادًا. يعمل الوضع غير المتصل دون اتصال بعد تنزيل نماذج لغات NLLB في الإعدادات — مثالي للخصوصية أو أثناء السفر.</string>
+    <string name="guide_privacy_title">الخصوصية</string>
+    <string name="guide_privacy_body">لا تغادر الترجمة غير المتصلة جهازك أبدًا. لا ترسل الترجمة المتصلة سوى النص الذي تترجمه إلى خدمة الترجمة. لا يحتوي Wergêr على إعلانات ولا تتبّع ولا حساب. صُنع بواسطة Cybergah Group.</string>
+</resources>

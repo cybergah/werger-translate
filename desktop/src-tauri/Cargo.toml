@@ -1,0 +1,70 @@
+[package]
+name = "werger"
+version = "1.0.0"
+description = "Wergêr — offline/online translation app by Cybergah Group"
+authors = ["Cybergah Group <cybergah.com>"]
+license = "MIT"
+edition = "2021"
+rust-version = "1.77"
+
+# The library name is used by the Tauri mobile bindings; harmless on desktop.
+[lib]
+name = "werger_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+# Global hotkey + clipboard for "select text anywhere → translate".
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-clipboard-manager = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# reqwest with blocking + json + rustls (no native OpenSSL needed on Windows).
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+# Document text extraction for the Document screen (.pdf). Pure Rust.
+pdf-extract = "0.10"
+# Ship synthesized/online audio to the webview as a base64 data URL.
+base64 = "0.22"
+# Format-preserving document translation (.docx is a zip of XML).
+zip = { version = "2", default-features = false, features = ["deflate"] }
+regex = "1"
+
+# ---- Offline ONNX engine (opt-in) ----
+# Everything in the `offline` feature is gated so the DEFAULT build compiles
+# without ONNX Runtime. Enable with: npx tauri build -- --features offline
+# `download-binaries` fetches ONNX Runtime at build time; it requires a TLS
+# backend. `tls-rustls` uses `ring` so no system OpenSSL is needed on Windows.
+ort = { version = "2.0.0-rc.10", optional = true, default-features = false, features = ["std", "ndarray", "download-binaries", "tls-rustls"] }
+ndarray = { version = "0.17", optional = true }
+unicode-normalization = { version = "0.1", optional = true }
+
+# Windows built-in offline OCR (Windows.Media.Ocr) for the Photo screen.
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.58", features = [
+    "Foundation",
+    "Foundation_Collections",
+    "Globalization",
+    "Graphics_Imaging",
+    "Media_Ocr",
+    "Storage",
+    "Storage_Streams",
+    "Win32_UI_Input_KeyboardAndMouse",
+] }
+
+[features]
+# Offline NLLB-200 translation engine + MMS-TTS speech, both via ONNX Runtime.
+# OFF by default to guarantee the out-of-the-box build succeeds even if ORT
+# binaries are unavailable.
+offline = ["dep:ort", "dep:ndarray", "dep:unicode-normalization"]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

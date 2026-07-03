@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <string name="nav_translate">وەرگێڕان</string>
+    <string name="nav_document">بەڵگەنامە</string>
+    <string name="nav_photo">وێنە</string>
+    <string name="nav_settings">ڕێکخستن</string>
+    <string name="nav_about">دەربارە</string>
+
+    <string name="input_hint">دەقەکە بنووسە</string>
+    <string name="translate_btn">وەرگێڕە</string>
+    <string name="translating">وەرگێڕان دەکرێت…</string>
+    <string name="clear">سڕینەوە</string>
+    <string name="swap">گۆڕینی زمانەکان</string>
+    <string name="output_placeholder">وەرگێڕان لێرە دەردەکەوێت.</string>
+    <string name="listen">گوێگرتن</string>
+    <string name="copy">لەبەرگرتنەوە</string>
+    <string name="engine_online">سەرهێڵ</string>
+    <string name="engine_offline">دەرهێڵ</string>
+
+    <string name="doc_pick">بەڵگەنامە هەڵبژێرە (‎.txt، .pdf)</string>
+    <string name="doc_busy">بەڵگەنامە وەردەگێڕدرێت…</string>
+    <string name="doc_result">ئەنجام</string>
+    <string name="doc_share">هاوبەشکردن</string>
+    <string name="doc_hint">پەڕگەیەکی ‎.txt یان ‎.pdf هەڵبژێرە؛ بە هەمان فۆرمات وەردەگێڕدرێت (٢ مێگابایت).</string>
+    <string name="doc_ready">بەڵگە وەرگێڕدرا</string>
+
+    <string name="photo_gallery">لە گاڵەری</string>
+    <string name="photo_camera">کامێرا</string>
+    <string name="photo_run">وەریبگێڕە و لەسەر وێنە دایبنێ</string>
+    <string name="photo_busy">پرۆسێس دەکرێت…</string>
+    <string name="photo_recognized">دەقی ناسراوە</string>
+    <string name="photo_hint">وێنەیەک هەڵبژێرە یان بیگرە؛ وەرگێڕان لەسەر وێنەکە دادەنرێت.</string>
+    <string name="photo_save">پاشەکەوت</string>
+    <string name="photo_share">هاوبەشکردن</string>
+    <string name="cancel_btn">پاشگەزبوونەوە</string>
+    <string name="photo_show_original">نیشاندانی ڕەسەن</string>
+    <string name="photo_show_translated">نیشاندانی وەرگێڕان</string>
+    <string name="fullscreen">پڕ بە شاشە</string>
+    <string name="doc_open">کردنەوە</string>
+
+    <string name="settings_mode">شێوازی وەرگێڕان</string>
+    <string name="mode_auto">خۆکار</string>
+    <string name="mode_online">سەرهێڵ (LibreTranslate)</string>
+    <string name="mode_offline">دەرهێڵ (NLLB)</string>
+    <string name="settings_model">مۆدێلی دەرهێڵ</string>
+    <string name="model_download">داگرتنی مۆدێل (~%1$d MB)</string>
+    <string name="model_import">بوخچەی مۆدێل هەڵبژێرە</string>
+    <string name="model_ready">مۆدێل ئامادەیە ✓</string>
+    <string name="model_absent">مۆدێل داگیراو نییە</string>
+    <string name="model_downloading">داگرتن: %1$d / %2$d MB</string>
+    <string name="model_importing">هاوردەکردن: %1$d / %2$d MB</string>
+    <string name="model_loading">مۆدێل بار دەکرێت…</string>
+    <string name="model_path">شوێن: %1$s</string>
+    <string name="model_note">مۆدێل جارێک داگیردەکرێت، پاشان ئەپەکە بێ ئینتەرنێت کاردەکات.</string>
+    <string name="settings_online">ڕێکخستنی سەرهێڵ</string>
+    <string name="lt_url">ناونیشانی LibreTranslate</string>
+    <string name="lt_key">کلیلی API (ئارەزوومەندانە)</string>
+    <string name="settings_language">زمانی ئەپ</string>
+    <string name="retry">دووبارە هەوڵبدەوە</string>
+
+    <string name="about_title">دەربارەی Wergêr</string>
+    <string name="about_tagline">وەرگێڕان بە AI — دەرهێڵ و سەرهێڵ</string>
+    <string name="about_body">Wergêr ئەپێکی وەرگێڕانی بەخۆڕایی و سەرچاوەکراوەیە. کوردی (کرمانجی و سۆرانی) و زۆر زمانی تر وەردەگێڕێت، هەم دەرهێڵ هەم سەرهێڵ. ئێمە باوەڕمان وایە هیچ زمانێک نابێت بەجێبهێڵرێت.</string>
+    <string name="about_made_by">دروستکراوی Cybergah Group</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">سەرچاوەکراوە · بەخۆڕایی · بێ ڕیکلام · بێ شوێنکەوتن</string>
+    <string name="about_license">کۆد: AGPL-3.0 · مۆدێلی NLLB-200 (Meta): CC-BY-NC 4.0 (نابازرگانی)</string>
+    <string name="about_thirdparty">بە ONNX Runtime، ML Kit، pdf.js و pdf-lib دروستکراوە — سوپاس بۆ کۆمەڵگای سەرچاوەکراوە.</string>
+    <string name="about_privacy">لە دۆخی دەرهێڵدا دەق هەرگیز ئامێرەکە ناهێڵێت. لە دۆخی سەرهێڵدا دەق بۆ وەرگێڕان دەنێردرێت.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">وەشانی %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">ڕێنما</string>
+    <string name="guide_title">ڕێنمای بەکارهێنان</string>
+    <string name="guide_replay">ڕاهێنان دووبارە پیشان بدە</string>
+    <string name="onboard_skip">بازدان</string>
+    <string name="onboard_next">دواتر</string>
+    <string name="onboard_back">پێشتر</string>
+    <string name="onboard_start">دەست پێبکە</string>
+    <string name="guide_welcome_title">بەخێربێیت بۆ Wergêr</string>
+    <string name="guide_welcome_body">Wergêr وەردەگێڕێت لە نێوان کوردی (کورمانجی و سۆرانی)، تورکی، فارسی، عەرەبی، ئینگلیزی و نزیکەی ٢٠٠ زمانی تر — وەک دەقی ساده، لەناو وێنەکان و لەناو بەڵگەنامەکان. ئەم ڕێنمایە هەموو تایبەتمەندییەک نیشان دەدات. دەتوانیت هەر کاتێک لە دوگمەی ڕێنماوە دووبارە بیکەیتەوە.</string>
+    <string name="guide_text_title">وەرگێڕانی دەق</string>
+    <string name="guide_text_body">لە شاشەی وەرگێڕان، لە سەرەوە زمانی سەرچاوە و زمانی ئامانج هەڵبژێرە. دەق بنووسە یان بیلکێنە، پاشان دوگمەی وەرگێڕان دابگرە. بۆ گۆڕینی هەردوو زمان ⇄، بۆ گوێگرتن 🔊، و بۆ لەبەرگرتنەوەی ئەنجام ⧉ بەکاربهێنە.</string>
+    <string name="guide_photo_title">وەرگێڕانی وێنە</string>
+    <string name="guide_photo_body">تابی وێنە بکەرەوە و وێنەیەک هەڵبژێرە. Wergêr دەقی ناو وێنەکە دەخوێنێتەوە، وەریدەگێڕێت و وەرگێڕانەکە دەخاتە سەر وێنە ڕەسەنەکە — وەک وەرگێڕی زیندووی کامێرا. دەتوانیت لە نێوان ڕەسەن و وەرگێڕان بگۆڕیت، بە شاشەی پڕ بیبینیت، پاشان پاشەکەوتی بکەیت یان هاوبەشی بکەیت.</string>
+    <string name="guide_doc_title">وەرگێڕانی بەڵگەنامە</string>
+    <string name="guide_doc_body">تابی بەڵگەنامە بکەرەوە و فایلێکی .txt یان .pdf هەڵبژێرە (تا ٢ مێگابایت). فایلی دەقی هێڵ بە هێڵ وەردەگێڕدرێت. PDFـەکان ڕووکاری ڕەسەنی خۆیان دەپارێزن — هەموو لاپەڕەیەک لە شوێنی خۆیدا وەردەگێڕدرێت. کاتێک تەواو بوو دەتوانیت بەناو هەموو لاپەڕەکاندا بشۆڕێیتەوە، پاشان فایلەکە لە ئامێرەکەت پاشەکەوت بکەیت یان هاوبەشی بکەیت.</string>
+    <string name="guide_modes_title">سەرهێڵ و دەرهێڵ</string>
+    <string name="guide_modes_body">دۆخی خۆکار کاتێک ئینتەرنێت هەبێت بەکاری دەهێنێت و بەخۆکاری دەگەڕێتەوە بۆ دەرهێڵ. سەرهێڵ خێرایە و پێویستی بە ڕێکخستن نییە. دەرهێڵ بێ پەیوەندی کار دەکات دوای ئەوەی مۆدێلە زمانییەکانی NLLB لە ڕێکخستنەکان دابەزێنیت — گونجاوە بۆ تایبەتێتی یان گەشت.</string>
+    <string name="guide_privacy_title">تایبەتێتی</string>
+    <string name="guide_privacy_body">وەرگێڕانی دەرهێڵ هەرگیز لە ئامێرەکەت دەرناچێت. وەرگێڕانی سەرهێڵ تەنها ئەو دەقە دەنێرێت کە وەریدەگێڕیت بۆ خزمەتگوزاری وەرگێڕان. Wergêr نە ڕیکلام، نە بەدواداچوون و نە هەژمار هەیە. دروستکراوە لەلایەن Cybergah Group.</string>
+</resources>

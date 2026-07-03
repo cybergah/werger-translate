@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <!-- navigation -->
+    <string name="nav_translate">Wergerandin</string>
+    <string name="nav_document">Belge</string>
+    <string name="nav_photo">Wêne</string>
+    <string name="nav_settings">Eyar</string>
+    <string name="nav_about">Der barê</string>
+
+    <!-- translate -->
+    <string name="input_hint">Nivîsê binivîse</string>
+    <string name="translate_btn">Wergerîne</string>
+    <string name="translating">Tê wergerandin…</string>
+    <string name="clear">Paqij bike</string>
+    <string name="swap">Zimanan biguherîne</string>
+    <string name="output_placeholder">Werger dê li vir xuya bibe.</string>
+    <string name="listen">Bixwîne</string>
+    <string name="copy">Jê bigire</string>
+    <string name="engine_online">serhêl</string>
+    <string name="engine_offline">bêinternet</string>
+
+    <!-- document -->
+    <string name="doc_pick">Belgeyê hilbijêre (.txt, .pdf)</string>
+    <string name="doc_busy">Belge tê wergerandin…</string>
+    <string name="doc_result">Encam</string>
+    <string name="doc_share">Parve bike</string>
+    <string name="doc_hint">Pelekî .txt an .pdf hilbijêre; di heman formatî de tê wergerandin (2 MB).</string>
+    <string name="doc_ready">Belge hate wergerandin</string>
+
+    <!-- photo -->
+    <string name="photo_gallery">Ji galeriyê</string>
+    <string name="photo_camera">Kamera</string>
+    <string name="photo_run">Wergerîne û li ser wêneyê deyne</string>
+    <string name="photo_busy">Tê xebitandin…</string>
+    <string name="photo_recognized">Nivîsa ku hat xwendin</string>
+    <string name="photo_hint">Wêneyekî hilbijêre an bikşîne; werger li ser wêneyê tê danîn.</string>
+    <string name="photo_save">Tomar bike</string>
+    <string name="photo_share">Parve bike</string>
+    <string name="cancel_btn">Betal bike</string>
+    <string name="photo_show_original">Ya resen nîşan bide</string>
+    <string name="photo_show_translated">Wergerê nîşan bide</string>
+    <string name="fullscreen">Ekrana tijî</string>
+    <string name="doc_open">Vebike</string>
+
+    <!-- settings -->
+    <string name="settings_mode">Awayê wergerandinê</string>
+    <string name="mode_auto">Bixweber</string>
+    <string name="mode_online">Serhêl (LibreTranslate)</string>
+    <string name="mode_offline">Bêinternet (NLLB)</string>
+    <string name="settings_model">Modela bêinternet</string>
+    <string name="model_download">Modelê daxe (~%1$d MB)</string>
+    <string name="model_import">Peldanka modelê hilbijêre</string>
+    <string name="model_ready">Model amade ye ✓</string>
+    <string name="model_absent">Model nehatiye daxistin</string>
+    <string name="model_downloading">Tê daxistin: %1$d / %2$d MB</string>
+    <string name="model_importing">Tê veguhastin: %1$d / %2$d MB</string>
+    <string name="model_loading">Model tê barkirin…</string>
+    <string name="model_path">Cih: %1$s</string>
+    <string name="model_note">Model carekê tê daxistin, paşê sepan bê internetê dixebite.</string>
+    <string name="settings_online">Eyarên serhêl</string>
+    <string name="lt_url">Navnîşana LibreTranslate</string>
+    <string name="lt_key">Mifteya API (vebijarkî)</string>
+    <string name="settings_language">Zimanê sepanê</string>
+    <string name="retry">Dîsa biceribîne</string>
+
+    <!-- about -->
+    <string name="about_title">Der barê Wergêr de</string>
+    <string name="about_tagline">Wergerandina bi AI — bêinternet û serhêl</string>
+    <string name="about_body">Wergêr sepaneke wergerandinê ya belaş û çavkaniya wê vekirî ye. Ew zimanê Kurdî (Kurmancî û Soranî) û gelek zimanên din werdigerîne, hem bê internetê hem serhêl. Em bawer dikin tu ziman nabe li paş bê hiştin.</string>
+    <string name="about_made_by">Ji aliyê Cybergah Group ve hatiye çêkirin</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">Çavkaniya vekirî · Belaş · Bê reklam · Bê şopandin</string>
+    <string name="about_license">Kod: AGPL-3.0 · Modela NLLB-200 (Meta): CC-BY-NC 4.0 (ne bazirganî)</string>
+    <string name="about_thirdparty">Bi ONNX Runtime, ML Kit, pdf.js û pdf-lib hatiye çêkirin — spas ji civaka çavkaniya vekirî re.</string>
+    <string name="about_privacy">Di moda negirêdayî de nivîs qet ji cîhazê dernakeve. Di moda serhêl de nivîs ji bo wergerê tê şandin.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">Versiyon %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">Rêber</string>
+    <string name="guide_title">Rêbera bikaranînê</string>
+    <string name="guide_replay">Perwerdehiyê dîsa nîşan bide</string>
+    <string name="onboard_skip">Bihêle</string>
+    <string name="onboard_next">Pêş</string>
+    <string name="onboard_back">Paş</string>
+    <string name="onboard_start">Dest pê bike</string>
+    <string name="guide_welcome_title">Bi xêr hatî Wergêr</string>
+    <string name="guide_welcome_body">Wergêr di navbera Kurdî (Kurmancî û Soranî), Tirkî, Farisî, Erebî, Îngilîzî û nêzî 200 zimanên din de werger dike — wek nivîsa sade, di nav wêneyan de û di nav belgeyan de. Ev rêber her taybetmendiyê nîşan dide. Tu dikarî her gav ji bişkoja Rêber ve wê ji nû ve vekî.</string>
+    <string name="guide_text_title">Wergerandina nivîsê</string>
+    <string name="guide_text_body">Di dîmena Wergerandinê de, li jor zimanê çavkanî û zimanê armanc hilbijêre. Nivîsê binivîse an pêve bike, paşê Wergerîne bitikîne. Ji bo guhertina her du zimanan ⇄, ji bo guhdarîkirinê 🔊, û ji bo jêgirtina encamê ⧉ bi kar bîne.</string>
+    <string name="guide_photo_title">Wergerandina wêneyan</string>
+    <string name="guide_photo_body">Sekmeya Wêne veke û wêneyekê hilbijêre. Wergêr nivîsa di wêneyê de dixwîne, werdigerîne û wergerê li ser ya resen datîne — mîna wergêrekî kamerayê yê zindî. Tu dikarî di navbera ya resen û wergerê de biguherî, bi dîmena tije bibînî, paşê Tomar bikî an Parve bikî.</string>
+    <string name="guide_doc_title">Wergerandina belgeyan</string>
+    <string name="guide_doc_body">Sekmeya Belge veke û pelekî .txt an .pdf hilbijêre (heta 2 MB). Pelên nivîsê rêz bi rêz têne wergerandin. PDF sêwirana xwe ya resen diparêzin — her rûpel li cihê xwe tê wergerandin. Dema ku biqede tu dikarî hemû rûpelan bişopînî, paşê pelê li cîhaza xwe Tomar bikî an Parve bikî.</string>
+    <string name="guide_modes_title">Serhêl û negirêdayî</string>
+    <string name="guide_modes_body">Moda otomatîk dema înternet hebe wê bi kar tîne û bixweber vedigere ser negirêdayî. Serhêl bilez e û ne hewceyî sazkirinê ye. Negirêdayî piştî ku tu modelên zimanî yên NLLB di Eyaran de dakêşî bê girêdan dixebite — ji bo nepenîtiyê an seferê guncaw e.</string>
+    <string name="guide_privacy_title">Nepenîtî</string>
+    <string name="guide_privacy_body">Wergera negirêdayî tu carî ji cîhaza te dernakeve. Wergera serhêl tenê nivîsa ku tu werdigerînî dişîne servîsa wergerê. Wergêr ne reklam, ne şopandin û ne jî hesab heye. Ji aliyê Cybergah Group ve hatiye çêkirin.</string>
+</resources>

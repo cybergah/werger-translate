@@ -1,0 +1,18 @@
+﻿import json
+d = json.load(open(r"C:\Users\harun\Desktop\wergir\tools\tokenizer.json", encoding="utf-8"))
+print("TOP KEYS:", list(d.keys()))
+print("NORMALIZER:", json.dumps(d.get("normalizer"))[:400])
+print("PRE_TOK:", json.dumps(d.get("pre_tokenizer"))[:400])
+print("POST:", json.dumps(d.get("post_processor"))[:600])
+print("DECODER:", json.dumps(d.get("decoder"))[:400])
+m = d["model"]
+print("MODEL TYPE:", m.get("type"))
+print("MODEL KEYS:", list(m.keys()))
+v = m.get("vocab")
+print("VOCAB LEN:", len(v))
+print("VOCAB SAMPLE 0-5:", v[:5])
+print("UNK_ID:", m.get("unk_id"))
+at = d.get("added_tokens", [])
+print("ADDED TOKENS COUNT:", len(at))
+print("ADDED FIRST 5:", json.dumps(at[:5]))
+print("ADDED LAST 8:", json.dumps(at[-8:]))

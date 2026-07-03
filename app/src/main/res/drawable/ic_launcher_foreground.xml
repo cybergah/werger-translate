@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Stylized "W" for Wergir, white on transparent, centered in safe zone -->
+    <group android:scaleX="1.0" android:scaleY="1.0">
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,40 L37,68 L44,48 L51,68 L58,40 L52,40 L48.5,57 L42.5,40 L40,40 L34,57 L31,40 Z" />
+        <path
+            android:fillColor="#A5D6A7"
+            android:pathData="M62,40 L62,68 L68,68 L68,57 L74,57 L78,68 L84,68 L79,56 C82,54 83,51 83,48 C83,43 79,40 73,40 Z M68,45 L73,45 C75,45 77,46 77,48 C77,50 75,52 73,52 L68,52 Z" />
+    </group>
+</vector>

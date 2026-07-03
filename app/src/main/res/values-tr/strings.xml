@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Wergêr</string>
+
+    <string name="nav_translate">Çeviri</string>
+    <string name="nav_document">Belge</string>
+    <string name="nav_photo">Fotoğraf</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_about">Hakkında</string>
+
+    <string name="input_hint">Metni yazın</string>
+    <string name="translate_btn">Çevir</string>
+    <string name="translating">Çevriliyor…</string>
+    <string name="clear">Temizle</string>
+    <string name="swap">Dilleri değiştir</string>
+    <string name="output_placeholder">Çeviri burada görünecek.</string>
+    <string name="listen">Seslendir</string>
+    <string name="copy">Kopyala</string>
+    <string name="engine_online">çevrimiçi</string>
+    <string name="engine_offline">çevrimdışı</string>
+
+    <string name="doc_pick">Belge seç (.txt, .pdf)</string>
+    <string name="doc_busy">Belge çevriliyor…</string>
+    <string name="doc_result">Sonuç</string>
+    <string name="doc_share">Paylaş</string>
+    <string name="doc_hint">.txt veya .pdf seçin; aynı formatta çevrilmiş dosya verilir (2 MB).</string>
+    <string name="doc_ready">Belge çevrildi</string>
+
+    <string name="photo_gallery">Galeriden</string>
+    <string name="photo_camera">Kamera</string>
+    <string name="photo_run">Çevir ve fotoğrafa yerleştir</string>
+    <string name="photo_busy">İşleniyor…</string>
+    <string name="photo_recognized">Okunan metin</string>
+    <string name="photo_hint">Bir fotoğraf seçin veya çekin; çeviri fotoğrafın üzerine yerleştirilir.</string>
+    <string name="photo_save">Kaydet</string>
+    <string name="photo_share">Paylaş</string>
+    <string name="cancel_btn">İptal</string>
+    <string name="photo_show_original">Orijinali göster</string>
+    <string name="photo_show_translated">Çeviriyi göster</string>
+    <string name="fullscreen">Tam ekran</string>
+    <string name="doc_open">Aç</string>
+
+    <string name="settings_mode">Çeviri modu</string>
+    <string name="mode_auto">Otomatik</string>
+    <string name="mode_online">Çevrimiçi (LibreTranslate)</string>
+    <string name="mode_offline">Çevrimdışı (NLLB)</string>
+    <string name="settings_model">Çevrimdışı model</string>
+    <string name="model_download">Modeli indir (~%1$d MB)</string>
+    <string name="model_import">Model klasörü seç</string>
+    <string name="model_ready">Model hazır ✓</string>
+    <string name="model_absent">Model indirilmedi</string>
+    <string name="model_downloading">İndiriliyor: %1$d / %2$d MB</string>
+    <string name="model_importing">Aktarılıyor: %1$d / %2$d MB</string>
+    <string name="model_loading">Model yükleniyor…</string>
+    <string name="model_path">Konum: %1$s</string>
+    <string name="model_note">Model bir kez indirilir; sonra uygulama çevrimdışı çalışır.</string>
+    <string name="settings_online">Çevrimiçi ayarlar</string>
+    <string name="lt_url">LibreTranslate adresi</string>
+    <string name="lt_key">API anahtarı (isteğe bağlı)</string>
+    <string name="settings_language">Uygulama dili</string>
+    <string name="retry">Tekrar dene</string>
+
+    <string name="about_title">Wergêr hakkında</string>
+    <string name="about_tagline">Yapay zekâ ile çeviri — çevrimdışı ve çevrimiçi</string>
+    <string name="about_body">Wergêr, ücretsiz ve açık kaynaklı bir çeviri uygulamasıdır. Kürtçe (Kurmancî ve Soranî) ile birçok dili hem çevrimdışı hem çevrimiçi çevirir. Hiçbir dilin geride kalmaması gerektiğine inanıyoruz.</string>
+    <string name="about_made_by">Cybergah Group tarafından yapılmıştır</string>
+    <string name="about_website">cybergah.com</string>
+    <string name="about_opensource">Açık kaynak · Ücretsiz · Reklamsız · Takipsiz</string>
+    <string name="about_license">Kod: AGPL-3.0 · NLLB-200 modeli (Meta): CC-BY-NC 4.0 (ticari değil)</string>
+    <string name="about_thirdparty">ONNX Runtime, ML Kit, pdf.js ve pdf-lib ile geliştirildi — açık kaynak topluluğuna teşekkürler.</string>
+    <string name="about_privacy">Çevrimdışı modda metin cihazdan hiç çıkmaz. Çevrimiçi modda metin çeviri için servislere gönderilir.</string>
+    <string name="about_copyright">© 2026 Cybergah Group</string>
+    <string name="version">Sürüm %1$s</string>
+
+    <!-- guide + onboarding -->
+    <string name="nav_guide">Kılavuz</string>
+    <string name="guide_title">Kullanım Kılavuzu</string>
+    <string name="guide_replay">Eğitimi tekrar göster</string>
+    <string name="onboard_skip">Atla</string>
+    <string name="onboard_next">İleri</string>
+    <string name="onboard_back">Geri</string>
+    <string name="onboard_start">Başla</string>
+    <string name="guide_welcome_title">Wergêr\'e hoş geldiniz</string>
+    <string name="guide_welcome_body">Wergêr; Kürtçe (Kurmancî ve Soranî), Türkçe, Farsça, Arapça, İngilizce ve yaklaşık 200 dil arasında çeviri yapar — düz metin olarak, fotoğrafların içinde ve belgelerin içinde. Bu kılavuz her özelliği anlatır. İstediğiniz zaman Kılavuz düğmesinden yeniden açabilirsiniz.</string>
+    <string name="guide_text_title">Metin çevirme</string>
+    <string name="guide_text_body">Çeviri ekranında üstten kaynak ve hedef dili seçin. Metni yazın veya yapıştırın, ardından Çevir\'e basın. İki dili değiştirmek için ⇄, metni dinlemek için 🔊, sonucu kopyalamak için ⧉ kullanın.</string>
+    <string name="guide_photo_title">Fotoğraf çevirme</string>
+    <string name="guide_photo_body">Fotoğraf sekmesini açın ve bir görsel seçin. Wergêr resimdeki yazıyı okur, çevirir ve çeviriyi orijinalin üzerine yerleştirir — canlı kamera çevirmeni gibi. Orijinal ile çeviri arasında geçiş yapabilir, tam ekran görüntüleyebilir, sonra Kaydedebilir veya Paylaşabilirsiniz.</string>
+    <string name="guide_doc_title">Belge çevirme</string>
+    <string name="guide_doc_body">Belge sekmesini açın ve bir .txt veya .pdf dosyası seçin (en fazla 2 MB). Metin dosyaları satır satır çevrilir. PDF\'ler özgün düzenini korur — her sayfa yerinde çevrilir. İşlem bitince tüm sayfaları kaydırarak görebilir, sonra dosyayı cihazınıza Kaydedebilir veya Paylaşabilirsiniz.</string>
+    <string name="guide_modes_title">Çevrimiçi ve çevrimdışı</string>
+    <string name="guide_modes_body">Otomatik mod internet varsa onu kullanır, yoksa otomatik olarak çevrimdışına geçer. Çevrimiçi hızlıdır ve kurulum gerektirmez. Çevrimdışı, Eyar bölümünden NLLB dil modellerini indirdikten sonra bağlantı olmadan çalışır — gizlilik için veya seyahatte idealdir.</string>
+    <string name="guide_privacy_title">Gizlilik</string>
+    <string name="guide_privacy_body">Çevrimdışı çeviri cihazınızdan asla çıkmaz. Çevrimiçi çeviri yalnızca çevirdiğiniz metni çeviri servisine gönderir. Wergêr\'de reklam, takip ve hesap yoktur. Cybergah Group tarafından yapılmıştır.</string>
+</resources>
