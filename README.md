@@ -12,6 +12,7 @@ _"Tu ziman ne li paş tê hiştin"_
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Windows-success.svg)](#-platform)
 [![Made by Cybergah](https://img.shields.io/badge/Çêkir-Cybergah%20Group-7c3aed.svg)](https://cybergah.com)
 [![Belaş û Çavkaniya Vekirî](https://img.shields.io/badge/Belaş-Çavkaniya%20Vekirî-brightgreen.svg)](#-felsefeya-çavkaniya-vekirî)
+[![Build](https://github.com/cybergah/werger-translate/actions/workflows/build.yml/badge.svg)](https://github.com/cybergah/werger-translate/actions/workflows/build.yml)
 
 **Kurmancî** ·
 [English](README.en.md) ·
