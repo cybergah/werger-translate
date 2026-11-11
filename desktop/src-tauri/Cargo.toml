@@ -31,7 +31,7 @@ pdf-extract = "0.10"
 # Ship synthesized/online audio to the webview as a base64 data URL.
 base64 = "0.22"
 # Format-preserving document translation (.docx is a zip of XML).
-zip = { version = "2", default-features = false, features = ["deflate"] }
+zip = { version = "9", default-features = false, features = ["deflate"] }
 regex = "1"
 
 # ---- Offline ONNX engine (opt-in) ----
